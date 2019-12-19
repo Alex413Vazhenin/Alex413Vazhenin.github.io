@@ -9,97 +9,88 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono&display=swap" rel="stylesheet">
     <!-- Main css -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    
     <!-- Header area -->
-    <header class="headerArea">
-        <div class="mainMenu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class ="container">
-                    <!-- Logo and toggle button are grouped together for better mobile display-->
-                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-                    </button>
-                    <!-- Collection of nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav menuNav justify-content-end">
-                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
-                        <li class="nav-item submenu dropdown">
-                            <a class="nav-link" href="#">Portfolio</a>
-                            <ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-									<li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portrfolio Details</a>
-							</ul>
-                        </li>
-                        <li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a>
-								</ul>
-                        </li>
-                        <li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Blog</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-								</ul>
-							</li>
-						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                    </div>
-                </div>
-            </nav>
+        <div id="slideout-menu">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <input type="text" placeholder="Search">
+                    <br>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>   
         </div>
-    </header>
-    <!--================Header Menu Area =================-->
+    <!--================Header Navbar =================-->
+        <nav>
+            <div id="logo-img">
+                <a href="#">
+                    <img src="img/logo.png" alt="Website logo">
+                </a>
+            </div>
+            <div id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <div id="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </li>
+            </ul>
+        </nav>
 
+        <div id="searchbox">
+            <input type="text" placeholder="Search">
+        </div>
 	<!--================Home Banner Area =================-->
-	<section class="banner-area owl-carousel" id="home">
-            <div class="single_slide_banner slide_bg1">
-                <div class="container">
-                    <div class="row fullscreen d-flex align-items-center">
-                        <div class="banner-content col-lg-12 justify-content-center">
-                            <h1>Alexander Vazhenin</h1>
-                            <h3>Personal portfolio Website</h3>
-                            <a href="#" class="primary-btn">Hire Me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_slide_banner slide_bg2">
-                <div class="container">
-                    <div class="row fullscreen d-flex align-items-center">
-                        <div class="banner-content col-lg-12 justify-content-center">
-                            <h1>Alexander Vazhenin</h1>
-                            <h3>Personal portfolio Website</h3>
-                            <a href="#" class="primary-btn">Hire Me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_slide_banner slide_bg3">
-                <div class="container">
-                    <div class="row fullscreen justify-content-end-flex align-items-center">
-                        <div class="banner-content col-lg-12 justify-content-center">
-                            <h1>Alexander Vazhenin</h1>
-                            <h3>Personal portfolio Website</h3>
-                            <a href="#" class="primary-btn">Hire Me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
+        <div id="banner">
+            <h1>Alexander Vazhenin</h1>
+            <h3>Front-end developer</h3>
+        </div>
+
+        <main>
+            <a href="#">
+                <h2 class="section-heading">All Blogs</h2>
+            </a>
+            <section>
+                
+            </section>
+        </main>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
