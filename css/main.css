@@ -217,6 +217,7 @@ section {
     transition: all 0.4s;
     display: inline-block;
     padding: 4px 32px;
+    margin-top: 15px;
 }
 
 .section-heading:hover {
@@ -224,17 +225,6 @@ section {
     background: red;
 }
 
-/* Section source */
-
-#section-source p {
-    padding: 8px;
-    text-align: center;
-}
-
-#section-source a {
-    margin: 8px;
-    text-align: center;
-}
 
 /* Card */
 
@@ -247,7 +237,7 @@ section {
 }
 
 .card .card-description {
-    padding: 0 8px;
+    padding: 20px 8px;
 }
 
 .card-meta-blogpost {
